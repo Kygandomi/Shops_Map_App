@@ -3,7 +3,8 @@ var islandsCollection={};
 var feature_layers = [];
 var overlayFlag = 0;
 
-
+$('#btn1').prop('disabled', true);
+$('#btn2').prop('disabled', true);
 //*********************************************************************************************
 // This section is to prevent dropdown on toolbar from disappearing when the user clicks on a checkbox
 $('#dem .dropdown-menu').on({
@@ -316,6 +317,9 @@ function finishedLoading() {
         // map again.
         loader.className = 'hide';
     }, 1500);
+    
+    $('#btn1').prop('disabled', false);
+    $('#btn2').prop('disabled', false);
 }
 
 //****************************************************
