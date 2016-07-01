@@ -341,14 +341,14 @@ $.ajax({
         url: "https://ckdata.firebaseio.com/data.json",
         success: function(response) {
             console.log("TURNIPS!");
-            console.log(response);
+            // console.log(response);
             all_shop_json = response;
             $.ajax({
                 dataType: 'json',
                 url: "https://ckdata.firebaseio.com/groups/MERGE%20Stores%202012.json",
                 success: function(response) {
                     console.log("Im over here!");
-                    console.log(response);
+                    // console.log(response);
 //                    finishedLoading();
                     members_list = response.members;
                     for(property in all_shop_json){
